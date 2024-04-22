@@ -1,0 +1,585 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+
+:root {
+  --pink: #e72463;
+  --pinktwo: #e95a87;
+  --red: #c0392b;
+  --beige: #eae1dc;
+
+  --beige-gras: #e2d9d0;
+  --violet: #491a6d;
+  --orange: #f39c12;
+  --black: #333;
+  --white: #fff;
+  --light-color: #666;
+  --light-white: #ccc;
+  --light-bg: #f5f5f5;
+  --border: 0.2rem solid var(--black);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+*::selection {
+  background-color: var(--pink);
+  color: var(--white);
+}
+
+*::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--pink);
+}
+a {
+  text-decoration: none;
+}
+/*--------------------------------admin header------------------*/
+/* .header {
+  background-color: #e2d9d0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+}
+
+.header .flex {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  position: relative;
+}
+
+.header .flex .navbar ul {
+  list-style: none;
+}
+
+.header .flex .navbar ul li {
+  float: left;
+  position: relative;
+}
+
+.header .flex .navbar ul li a {
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  display: block;
+  color: #252525;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.header .flex .navbar ul li a:hover {
+  color: var(--pink);
+}
+
+.header .icons i:hover {
+  cursor: pointer;
+  color: var(--pinktwo);
+}
+.header .icons i {
+  margin-left: 1.2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--violet);
+}
+
+.header .flex .logo-warda {
+  width: 200px;
+}
+
+.header .flex .icons div {
+  font-size: 2.5rem;
+  margin-left: 1.7rem;
+  cursor: pointer;
+  color: var(--black);
+}
+
+.header .flex .icons div:hover {
+  color: var(--pink);
+}
+
+.header .flex .navbar a {
+  margin: 0 1rem;
+  font-size: 2rem;
+  color: var(--light-color);
+}
+
+.header .flex .navbar a:hover {
+  text-decoration: underline;
+  color: var(--pink);
+}
+
+.header .flex .logo {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.header .flex .logo span {
+  color: var(--pink);
+}
+.header .flex .account-box {
+  position: absolute;
+  top: 120%;
+  right: 1rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  background-color: #ececec;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: none;
+  animation: fadeIn 0.2s linear;
+}
+
+.header .flex .account-box.active {
+  display: inline-block;
+}
+
+.header .flex .account-box p {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--black);
+  line-height: 1.5;
+}
+
+.header .flex .account-box p span {
+  color: var(--pink);
+}
+
+.header .flex .account-box button {
+  font-size: 1.2rem;
+  border-radius: 4px;
+  padding: 5px 10px;
+
+  background-color: var(--pink);
+  color: #ffffff;
+}
+
+.header .flex .account-box div a {
+  color: var(--orange);
+}
+
+.header .flex .account-box div a:hover {
+  text-decoration: underline;
+}
+#menu-btn {
+  display: none;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  color: #545b;
+} */
+/* .header {
+  background: #fff;
+  width: 100%;
+  padding-left: 1rem 0;
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  z-index: 1000;
+}
+ .flex {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+} */
+.header {
+  background-color: #e2d9d0;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+}
+
+.header .flex {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  position: relative;
+}
+
+.header .logo {
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: #545bba;
+  width: 190px;
+}
+.header .flex .account-box {
+  position: absolute;
+  top: 120%;
+  right: 1rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  background-color: #ececec;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: none;
+  animation: fadeIn 0.2s linear;
+}
+
+.header .flex .account-box.active {
+  display: inline-block;
+}
+
+.header .flex .account-box p {
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--light-color);
+  line-height: 1.5;
+}
+
+.header .flex .account-box p span {
+  color: var(--pink);
+}
+.header .flex .account-box button {
+  font-size: 1.2rem;
+  border-radius: 4px;
+  padding: 5px 10px;
+  background-color: var(--pink);
+}
+/* .header .navbar a {
+  margin: 0 1rem;
+  font-size: 1rem;
+  color: #252525;
+  text-transform: uppercase;
+}
+.header .navbar a:hover {
+  color: #e95a87;
+} */
+
+.header .flex .navbar ul {
+  list-style: none;
+}
+
+.header .flex .navbar ul li {
+  float: left;
+  position: relative;
+}
+
+.header .flex .navbar ul li a {
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  display: block;
+  color: #252525;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.header .flex .navbar ul li a:hover {
+  color: var(--pink);
+}
+
+.header .icons i {
+  margin-left: 1.2rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: #491a6d;
+}
+.header .icons i:hover {
+  color: #e95a87;
+}
+.header .flex .icons div {
+  font-size: 2.5rem;
+  margin-left: 1.7rem;
+  cursor: pointer;
+  color: var(--black);
+}
+
+.header.flex .icons div:hover {
+  color: var(--pink);
+}
+#menu-btn {
+  display: none;
+}
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  color: #545bba;
+}
+.box-container {
+  padding: 2% 8%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  justify-content: center;
+  align-items: center;
+}
+.box-container .box {
+  box-shadow: var(--box-shadow);
+  border-radius: 15px;
+  padding: 1rem;
+  background: aliceblue;
+  /* border: 2px solid goldenrod; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 5 px;
+}
+.box-container .box h3 {
+  font-size: 3rem;
+  color: #545bba;
+}
+.box-container .box a p {
+  text-decoration: none;
+  color: #333;
+}
+.box-container.box p {
+  font-size: 18rem;
+  text-transform: capitalize;
+  margin: 1rem;
+  text-decoration: none;
+}
+.box:hover {
+  background: #c7b3f5;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  color: #545bba;
+}
+/*-------------------------------------add-----------------*/
+
+.add-products {
+  background-image: url(img/blanc.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* width: 50vw;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: 1px solid #fef0ea;
+} */
+/* .add-products form {
+  text-transform: capitalize;
+  color: #e72463;
+} */
+/* .add-products form {
+  max-width: 50rem;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  border: #491a6d;
+  padding: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: var(--box-shadow);
+} */
+.add-products form {
+  width: 50dvw;
+  height: auto;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #ffeaf4;
+  border: 1px solid pink;
+  backdrop-filter: invert(5%);
+}
+form,
+input {
+  width: 100%;
+  background: ghostwhite;
+  padding: 1rem 4rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  padding-left: 0.5rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+}
+
+.add-products .btn {
+  cursor: pointer;
+  background: aliceblue;
+  color: #ac8296;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background: rgb(143, 116, 141);
+  border: 2px solid;
+  color: grey;
+}
+.add-products h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 5000;
+  font-size: x-large;
+  color: #ac8296;
+  margin: 1rem;
+}
+.add-products ::placeholder {
+  text-align: center;
+  font-size: larger;
+}
+.add-products form textarea {
+  width: 100%;
+  height: 200px;
+}
+
+.box-container-product {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: row-reverse; */
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+}
+
+.box-flower {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  /* border: 1px solid #ddd; */
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.box-flower p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex-shrink: 2;
+  overflow: hidden;
+  max-width: 10rem;
+  /* border: 1px solid red; */
+  width: auto;
+  /* display: inline-block; */
+}
+
+.price {
+  background-color: var(--pink);
+  /* width: 12rem; */
+  /* display: flex;
+  justify-content: center; */
+  /* border-radius: 0.8rem; */
+  color: var(--white);
+  padding: 1rem;
+  font-size: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.name {
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: var(--black);
+  font-family: "Poppins", sans-serif;
+}
+
+.details {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.option-btn,
+.delete-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  padding: 8px 0;
+
+  color: white;
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.option-btn {
+  background-color: var(--pink);
+  color: white;
+}
+.delete-btn {
+  background-color: var(--red);
+  color: white;
+}
+.option-btn:hover {
+  background-color: #fa0276;
+  color: white;
+}
+.delete-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+.empty {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+.update-product form {
+  max-width: 50rem;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  border: var(--border);
+  padding: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: var(--box-shadow);
+}
+.update-product form .box {
+  width: 100%;
+  margin: 1rem 0;
+  font-size: 1.8rem;
+  color: var(--black);
+  border-radius: 0.5rem;
+  background-color: var(--light-bg);
+  padding: 1.2rem 1.4rem;
+  border: var(--border);
+}
+
+.update-product form textarea {
+  height: 15rem;
+  resize: none;
+}
+
+.update-product .image {
+  height: 30rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+}
